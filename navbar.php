@@ -37,10 +37,10 @@
                         <a href="item.php"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Modulo de Compras</a>
                     </li>
                     <li class="<?php if (isset($products_menu)){echo "active";}?>">
-                        <a href="product.php"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Perfil del producto</a>
+                        <a href="product.php"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Modulo de Ventas</a>
                     </li>
                     <li class="<?php if (isset($stock_menu)){echo "active";}?>">
-                        <a href="stock.php"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Inventario</a>
+                        <a href="stock.php"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Modulo de Stock</a>
                     </li>
                      <li class="<?php if (isset($expired_menu)){echo "active";}?>">
                         <a href="expired.php"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Medicamentos vencidos</a>
