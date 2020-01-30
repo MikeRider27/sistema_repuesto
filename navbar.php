@@ -34,10 +34,10 @@
                         <a href="home.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></i> Inicio</a>
                     </li>
                     <li class="<?php if (isset($item_menu)){echo "active";}?>">
-                        <a href="item.php"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Modulo de Compras</a>
+                        <a href="item.php"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Registro de producto</a>
                     </li>
                     <li class="<?php if (isset($products_menu)){echo "active";}?>">
-                        <a href="product.php"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Perfil del producto</a>
+                        <a href="product.php"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Agregar a stock</a>
                     </li>
                     <li class="<?php if (isset($stock_menu)){echo "active";}?>">
                         <a href="stock.php"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Inventario</a>
@@ -46,7 +46,7 @@
                         <a href="expired.php"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Medicamentos vencidos</a>
                     </li>
                     <li class="<?php if (isset($sales_menu)){echo "active";}?>">
-                        <a href="sales.php"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Ventas</a>
+                        <a href="sales.php"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Reporte Ventas</a>
                     </li>
                 </ul>
             </div>
