@@ -29,7 +29,7 @@
                         <td align="left"><?= $it['item_brand']; ?></td>
                         <td align="left"><?= $it['item_type_desc']; ?></td>
                         <td><?= $it['item_grams']; ?></td>
-                        <td><?= "$ ".number_format($it['item_price'], 2); ?></td>
+                        <td><?= "Gs. ".number_format($it['item_price'], 2); ?></td>
                         <td>
                            <center>
                                <button onclick="editModal('<?= $it['item_id']; ?>');" type="button" class="btn btn-warning btn-xs">Editar

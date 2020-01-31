@@ -20,7 +20,7 @@
             <?php foreach($stocks as $s): ?>
                 <tr align="center">
                     <td><?= ucwords($s['item_name']); ?></td>
-                    <td><?= "$ ".number_format($s['item_price'], 2); ?></td>
+                    <td><?= "Gs. ".number_format($s['item_price'], 2); ?></td>
                     <td><?= $s['qty']; ?></td>
                 </tr>
             <?php endforeach; ?>
