@@ -75,7 +75,7 @@
                                 <tr>
                                     <th><center>Nombre</center></th>
                                     <th><center>Precio</center></th>
-                                    <th><center>Cant.</center></th>
+                                    <th><center>Cantidad</center></th>
                                     <th><center>Sub</center></th>
                                     <th><center></center></th>
                                 </tr>
