@@ -14,6 +14,7 @@ if(isset($_POST['un'])){
 		$_SESSION['logged_id'] = $result['user_id'];
 		$_SESSION['logged_type'] = $result['user_type'];
 		$_SESSION['uniqid'] = uniqid();
+		$_SESSION['usuario'] = $result['user_account'];
 	}else{
 		// echo 'fail';
 		$return['logged'] = false;

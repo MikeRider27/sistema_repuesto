@@ -48,7 +48,7 @@ $types = $db->getRows($sql);
 				  </div>
 
 				  <div class="form-group">
-				    <label class="control-label col-sm-3" for="">Gramos:</label>
+				    <label class="control-label col-sm-3" for="">Lado:</label>
 				    <div class="col-sm-9">
 				      <input type="text" maxlength="50" class="form-control" id="grams" placeholder="Ingresa los gramos" required="" autofocus="">
 				    </div>
