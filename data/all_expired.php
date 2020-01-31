@@ -18,7 +18,7 @@ $expireds = $expired->all_expired();
             <?php foreach($expireds as $ex): ?>
                 <tr align="center" class="text-danger">
                     <td><?= ucwords($ex['exp_itemName']); ?></td>
-                    <td><?= "$ ".number_format($ex['exp_itemPrice'], 2); ?></td>
+                    <td><?= "Gs. ".number_format($ex['exp_itemPrice'], 2); ?></td>
                     <td><?= $ex['exp_itemQty']; ?></td>
                     <td><?= $ex['exp_expiredDate']; ?></td>
                 </tr>

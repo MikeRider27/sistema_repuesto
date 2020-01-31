@@ -36,7 +36,7 @@
                                     <td><?= ucwords($s['item_code']); ?></td>
                                     <td><?= ucwords($s['item_name']); ?></td>
                                     <td><?= ucwords($s['item_brand']); ?></td>
-                                    <td><?= "$ ".number_format($s['item_price'], 2); ?></td>
+                                    <td><?= "Gs. ".number_format($s['item_price'], 2); ?></td>
                                     <td><?= $s['stock_qty']; ?></td>
                                     <td>
                                         <button onclick="toCart('<?= $s['stock_id']; ?>','<?= $s['stock_qty']; ?>','<?= $s['item_id']; ?>');" type="button" class="btn btn-success btn-xs">
@@ -75,7 +75,7 @@
                                 <tr>
                                     <th><center>Nombre</center></th>
                                     <th><center>Precio</center></th>
-                                    <th><center>Cant.</center></th>
+                                    <th><center>Cantidad</center></th>
                                     <th><center>Sub</center></th>
                                     <th><center></center></th>
                                 </tr>
@@ -91,7 +91,7 @@
                             ?>
                                 <tr align="center">
                                     <td><?= ucwords($c['item_name']); ?></td>
-                                    <td><?= "$ ".number_format($c['item_price'], 2); ?></td>
+                                    <td><?= "Gs. ".number_format($c['item_price'], 2); ?></td>
                                     <td><?= $c['cart_qty']; ?></td>
                                     <td><?= number_format($subTotal,2); ?></td>
                                     <td>

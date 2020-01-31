@@ -40,7 +40,7 @@ $stockList = $stock->all_stockList();
                         <td align="left"><?= $sl['item_type_desc']; ?></td>
                         <td><?= $sl['stock_manufactured']; ?></td>
                         <td><?= $sl['stock_purchased']; ?></td>
-                        <td><?= "$ ".number_format($sl['item_price'],2); ?></td>
+                        <td><?= "Gs. ".number_format($sl['item_price'],2); ?></td>
                         <td><?= $sl['stock_qty']; ?></td>
                         <td align="left" width="110px;"><?= $sl['stock_expiry']; ?>
                             <?php if($xDate <= $dateNow): ?>
