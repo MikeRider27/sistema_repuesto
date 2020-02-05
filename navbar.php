@@ -13,7 +13,7 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>  Administrador <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>  <?php echo $_SESSION['usuario'] ?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Configuración</a>
@@ -47,6 +47,9 @@
                     </li>
                     <li class="<?php if (isset($sales_menu)){echo "active";}?>">
                         <a href="sales.php"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Reporte Ventas</a>
+                    </li>
+                    <li class="<?php if (isset($sales_menu)){echo "active";}?>">
+                        <a href="marca.php"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> Registrar Marca</a>
                     </li>
                 </ul>
             </div>

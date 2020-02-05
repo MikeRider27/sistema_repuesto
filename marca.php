@@ -1,10 +1,9 @@
 <?php 
 require_once('include/session.php'); 
-$home_menu=1;
+$item_menu=1;
 ?>
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 
@@ -14,7 +13,7 @@ $home_menu=1;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Inicio - Sistema de Repuestos</title>
+    <title> Lista de Marca</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +29,8 @@ $home_menu=1;
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -47,19 +48,15 @@ $home_menu=1;
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                        <img src="imaG/LogoRepuestoBeto.png" width="220" height="220">
-                            Bienvenido <small> <?php echo $_SESSION['nombre'] ?> </small>                            
                         </h1>
-                        <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-home"></i> Inicio
-                            </li>
-                        </ol>
                     </div>
                 </div>
                 <!-- /.row -->
-                <div id="order"></div>         
-               
+                <button class="btn btn-default" id="add-new-item">Agregar Marca
+                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                </button>
+               <div id="all-item"></div>
+
             </div>
             <!-- /.container-fluid -->
 
@@ -70,17 +67,16 @@ $home_menu=1;
     <!-- /#wrapper -->
 
 
-<?php include_once('modal/to_cart.php'); ?>
-<?php include_once('modal/confirmation.php'); ?>
 <?php include_once('modal/add_new_item.php'); ?>
 <?php include_once('modal/message.php'); ?>
 
-    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/regis.js"></script>
+<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/regis.js"></script>
+
 
 </body>
 
