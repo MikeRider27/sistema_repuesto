@@ -4,7 +4,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Sistema de Inventario Farmacéutico</title>
+    <title>Beto Repuestos</title>
 	
     
         <link rel="stylesheet" href="assets/css/style.css">
