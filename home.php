@@ -48,7 +48,7 @@ $home_menu=1;
                     <div class="col-lg-12">
                         <h1 class="page-header">
                         <img src="imaG/LogoRepuestoBeto.png" width="220" height="220">
-                            Bienvenid@ <small> <?php echo $_SESSION['usuario'] ?> </small>                            
+                            Bienvenid@ <small> <?php echo $_SESSION['nombre'] ?> </small>                            
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">

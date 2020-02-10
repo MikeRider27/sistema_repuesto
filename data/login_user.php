@@ -11,10 +11,13 @@ if(isset($_POST['un'])){
 		// echo 'succ';
 		$return['logged'] = true;
 		$return['url'] = "home.php";
-		$_SESSION['logged_id'] = $result['user_id'];
-		$_SESSION['logged_type'] = $result['user_type'];
-		$_SESSION['uniqid'] = uniqid();
-		$_SESSION['usuario'] = $result['user_account'];
+		$_SESSION['logged_id'] = $result['usuarioid'];
+		//$_SESSION['logged_type'] = $result['user_type'];
+		//$_SESSION['uniqid'] = uniqid();
+		$_SESSION['usuario'] = $result['usuarionick'];
+		$_SESSION['nombre'] = $result['usuarionombre'];
+		$_SESSION['rol'] = $result['rolnombre'];
+
 	}else{
 		// echo 'fail';
 		$return['logged'] = false;

@@ -5,10 +5,10 @@ class User extends Database implements iUser {
 
 	public function user_login($username, $password)
 	{
-		$sql = "SELECT *
-				FROM user 
-				WHERE user_account = ?
-				AND user_pass = ?
+		$sql = "SELECT * 
+				FROM v_usuarios 
+				WHERE usuarionick = ?
+				AND usuariopass = ?
 		";
 		return $this->getRow($sql, [$username, $password]);
 	}//end login_user
