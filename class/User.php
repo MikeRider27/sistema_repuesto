@@ -6,9 +6,9 @@ class User extends Database implements iUser {
 	public function user_login($username, $password)
 	{
 		$sql = "SELECT *
-				FROM user 
-				WHERE user_account = ?
-				AND user_pass = ?
+				FROM v_usuario 
+				WHERE usuarionick = ?
+				AND usuariopass = ?
 		";
 		return $this->getRow($sql, [$username, $password]);
 	}//end login_user

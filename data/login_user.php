@@ -7,14 +7,17 @@ if(isset($_POST['un'])){
 
 	$up = md5($up);
 	$result = $user->user_login($un, $up);
+	
 	if($result > 0){
 		// echo 'succ';
 		$return['logged'] = true;
 		$return['url'] = "home.php";
-		$_SESSION['logged_id'] = $result['user_id'];
-		$_SESSION['logged_type'] = $result['user_type'];
-		$_SESSION['uniqid'] = uniqid();
-		$_SESSION['usuario'] = $result['user_account'];
+		$_SESSION['logged_id'] = $result['usuarioid'];
+		$_SESSION['usuario'] = $result['usuarionick'];
+		$_SESSION['nombre'] = $result['usuarionombre'];
+		$_SESSION['rol'] = $result['rolnombre'];
+		
+
 	}else{
 		// echo 'fail';
 		$return['logged'] = false;
